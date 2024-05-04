@@ -3,6 +3,20 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import TeamCard from '../../components/TeamCard/TeamCard'
 import { Helmet } from 'react-helmet'
 
+
+/**
+ * @type {Array<{name: string, position: string, image: string, linkedin: string, mail: string}>}
+ */
+const coordinatorsList = [
+  {
+    name: 'jk',
+    position: 'gs',
+    image: '',
+    linkedin: 'ga',
+    mail: 'adf',
+  },
+]
+
 const CommunityCo = () => {
   return (
     <>
@@ -17,9 +31,9 @@ const CommunityCo = () => {
           <Typography variant="h4">Coordinators</Typography>
         </Box>
         <Grid container rowSpacing={4} columnSpacing={2}>
-          {Array.from(Array(10)).map(() => (
+          {coordinatorsList.map((coordinator) => (
             <Grid item md={4} sm={6} xs={12}>
-              <TeamCard />
+              <TeamCard{...coordinator} />
             </Grid>
           ))}
         </Grid>

@@ -51,10 +51,10 @@ const NavBar = () => {
           name: 'Advisory Board',
           link: '/advisory-board',
         },
-        // {
-        //   name: 'Community Coordinators',
-        //   link: '/community-coordinators',
-        // },
+        {
+          name: 'Community Coordinators',
+          link: '/community-coordinators',
+        },
         // {
         //   name: 'Documentation Team',
         //   link: '/documentation-teams',
